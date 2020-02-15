@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Alatsi|Roboto:400,400i,700,700i&display=swap');
+
+// Functions
+@import './utilities/functions.scss';
+
+// Settings
+@import './base/settings';
+
+// Utilities
+@import './utilities/mixins';
+@import './utilities/utility-classes';
+
+// Resets
+@import './base/reset';
+@import './base/type';
+
+// Widgets
+@import './components/modal-add-item';
+
+@import './components/wrapper';
+@import './components/header';
+@import './components/body';
+@import './components/footer'

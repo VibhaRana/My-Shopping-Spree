@@ -1,0 +1,10 @@
+.wrapper {
+    max-width: 1300px;
+    background-color: cyan;
+    @include mc($set-tb: true, $t: em(20), $b: em(20));
+}
+
+body{
+    padding-top:30px;
+
+}
