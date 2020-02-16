@@ -3,10 +3,11 @@
 
     .ReactModal {
      
-        background-color: rgba($dark, 0.9);
+        background-color: rgba($dark, 1.9);
         align-items: center;
        
         justify-content: center;
+        text-align: center;
       
         
         
@@ -27,7 +28,7 @@
     button {
         text-align: center;
         margin: auto;
-        height: 20;
+        height: 40;
 
 
 }}

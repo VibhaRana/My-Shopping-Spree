@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+//Make a function which do not allow to cross the fixed amount i.e $5000
 function App() {
   return (
     <div className="App">

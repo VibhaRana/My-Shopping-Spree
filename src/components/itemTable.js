@@ -30,7 +30,7 @@ class ItemTable extends React.Component {
                                 <th align="left">Item</th>
                                 <th align="left">Unit Cost</th>
                                 <th align="left">Total Cost</th>
-                                <th></th>
+                                <th align="left">Remove Items</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -50,11 +50,11 @@ class ItemTable extends React.Component {
                             }
 
                             )}
-                            <tr class="last">
-                                <td colSpan="3" class="tableTotal">Total:</td>
+                            <tr class="row">
+                                <td colSpan="3" class="tableTotal">Total Money Spent:</td>
                                 
                                 <td>{sum.toLocaleString("en-US", { style: 'currency', currency: 'USD' })}</td>
-                                <td></td>
+                                <td>Deleted Items</td>
                             </tr>
                         </tbody>
                     </table>

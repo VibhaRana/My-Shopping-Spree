@@ -2,17 +2,20 @@ import React from 'react';
 //import ModalPayBills from './ModalPayBills';
 
 
-class MoneyLeft extends React.Component {
+class LeftMoney extends React.Component {
+
+    //make a variable which is null initially. Use if-else statement to define if money left is >=0, you still have the money remaining to spent,
+    //but if the money spent exceeds $5000, you are in debt then. Then return the variable information which store the info.
     
     render() {
-        let info=""
+        var information=null
         if(this.props.amount>=0){
-            info=`You have ${this.props.amount.toLocaleString("en-US",{style: 'currency', currency: 'USD'})} to spend`
+            information=`You have ${this.props.amount.toLocaleString("en-US",{style: 'currency', currency: 'USD'})} to spend`
         }else{
-            info=`You are now in debt and you owe ${(-this.props.amount).toLocaleString("en-US",{style: 'currency', currency: 'USD'})}`
+            information=`You are now in debt and you have to pay ${(-this.props.amount).toLocaleString("en-US",{style: 'currency', currency: 'USD'})}`
 
         }
-        return (<div>{info}</div>);
+        return (<div>{information}</div>);
     }
 }
-export default MoneyLeft
+export default LeftMoney
